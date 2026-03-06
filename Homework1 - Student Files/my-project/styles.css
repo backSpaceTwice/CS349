@@ -1,0 +1,154 @@
+/* General Guidelines:
+   - Use the provided purple color (#6f5eff) where applicable.
+   - The default font family for HW1 should be Arial, sans-serif.
+*/
+
+/* Typography: */
+/* 
+"House Design" title 
+    font-size: 1.5rem;
+    font-weight: bold;
+"House Styling" title 
+    font-size: 20px;
+Footer section headings: 'Store Info', 'About', 'Account', 'Policy'
+    font-size: 14px;
+Footer content 
+    font-size: 12px;
+For all other text, if not specified above, an approximate font size is acceptable. 
+*/
+
+/* TO-DO */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f5f5f3;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 5px;
+  padding: 25px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container {
+  color: #808080;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.crop-container {
+  object-position: center;
+  width: 90%;
+  overflow: hidden;
+}
+
+.parallax {
+  background-image: url("../my-project/image/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+h2 {
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  max-width: 1300px;
+}
+
+.house-styles {
+  display: flex;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding-bottom: 60px;
+}
+
+.house-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 60px;
+  width: 100%;
+}
+
+.option {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.option img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.option {
+  font-size: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #6e5efd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #545454;
+}
+
+ul {
+  margin-top: 16px;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 0%;
+  background-color: #f8f8f8;
+}
+
+footer div {
+  padding: 24px;
+}
+
+footer span {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+footer button {
+  border-radius: 24px;
+}
+
+footer button:hover {
+  background-color: #6e5efd;
+}
