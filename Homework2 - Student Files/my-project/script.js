@@ -1,7 +1,7 @@
 // To-Do
 
 // API key
-const API_KEY = "CONFIG.API_KEY";
+const API_KEY = CONFIG.API_KEY;
 const IMG_BASE = "https://image.tmdb.org/t/p/w500";
 const BASE_URL = "https://api.themoviedb.org/3";
 
